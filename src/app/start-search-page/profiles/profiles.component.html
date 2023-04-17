@@ -1,0 +1,53 @@
+<div class="main">
+    <h1>Top full-stack developers in United States</h1>
+    <div class="profiles">
+        <div class="one-profile" *ngFor="let i of developers | paginate: { itemsPerPage: 5, currentPage: p }">
+            <img src="../assets/img/profile-img.webp">
+            <div class="description">
+                <p>{{i.first_name}} {{i.last_name}}  ;  <span>{{i.category}}</span></p>
+                <span *ngFor="let skill of i.skills">{{skill.title}}</span>
+                <p>{{i.generalBio}}</p>
+            </div>
+            <button [routerLink]="['/profile', i.id]">View profile</button>
+        </div>
+    </div>
+
+    <div class="pagination">
+        <pagination-controls (pageChange)="p = $event" class="my-pagination"></pagination-controls>
+    </div>
+
+      <div class="end">
+        <hr>
+        <div class="end-1-div">
+            <ul>
+                <h5>Highest Demand Talents</h5>
+                <li>iOS Developer</li>
+                <li>Front-End Developer</li>
+                <li>UX Designer</li>
+                <li>UI Designer</li>
+                <li>Financial Modeling Consultants</li>
+                <li>Interim CFOs</li>
+            </ul>
+            <ul>
+                <h5>About</h5>
+                <li>Contact us</li>
+                <li>Press Center</li>
+                <li>Careers</li>
+            </ul>
+            <ul>
+                <h5>Hire a Top 3% Talent</h5>
+                <li><button>Sign Up</button></li>
+            </ul>
+        </div>
+    
+        <div class="end-2-div">
+            <span>© Copyright 2010 - 2018 Toptal, LLC</span>
+            <div>
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+                <i class="fa fa-google-plus" aria-hidden="true"></i>
+                <i class="fa fa-info" aria-hidden="true"></i>
+            </div>
+        </div>
+    </div>
+</div>

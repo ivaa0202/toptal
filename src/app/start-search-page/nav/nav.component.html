@@ -1,0 +1,44 @@
+<div class="row first-row">
+    <div class="col-8 first-col">
+        <img src="../assets/img/toptal-logo-66D00EF42A-seeklogo.com.png">
+    </div>
+    <div class="col-3 second-col">
+        <!-- u tablet verziji -->
+        <button>Sign Up</button>
+        <!-- u tablet verziji -->
+        
+        <a href="">Find Developers</a>
+        <a href="">Resources</a>
+    </div>
+    <div class="col third-col">
+        <a href=""><span class="material-symbols-outlined">input</span>Login</a>
+    </div>
+</div>
+
+<div class="row second-row">
+    <div class="col">
+        <a href="">Home</a>
+        <span class="material-symbols-outlined">chevron_right</span>
+        <a href="">Why Top 3%</a>
+        <span class="material-symbols-outlined">chevron_right</span>
+        <a href="">Find Developers</a>
+    </div>
+    <div class="col">
+        <div class="wrap">
+            <div class="drop-down-div">
+                <button (click)="toggle()" class="click-button">Full-stack develper in<span class="material-symbols-outlined">arrow_drop_down</span></button>
+                <div class="drop-down-content" *ngIf="isOpened">
+                    <ul>
+                        <li>Backend Developer</li>
+                        <li>Mobile Developer</li>
+                        <li>Data Scientist</li>
+                        <li>Frontend Developer</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <input type="text" class="" id="" placeholder="United States">
+            <button class="search-button">Search</button>
+        </div>
+    </div>
+</div>

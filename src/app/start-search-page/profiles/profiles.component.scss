@@ -1,0 +1,197 @@
+.main {
+    background-color: rgb(246 246 242 / 56%);
+    padding: 15px 20px;
+
+    h1 {
+        font-size: 30px;
+        font-weight: 400;
+    }
+
+    .profiles {
+        display: block;
+
+        .one-profile {
+            display: flex;
+            border: 1px solid #c3c0c0;
+            align-items: center;
+            padding: 12px 15px;
+            background-color: white;
+            margin-bottom: 15px;
+
+            img {
+                height: 110px;
+                width: 110px;
+                border: 1px solid #c3c0c0;
+                padding: 5px;
+                object-fit: cover;
+            }
+
+            .description {
+                padding: 0 20px;
+                width: 75%;
+
+                p {
+                    margin: 0;
+                }
+
+                p:first-child {
+                    font-weight: 700;
+                    font-size: 18px;
+                }
+
+                p:last-child {
+                    font-size: 14px;
+                }
+
+                span {
+                    color: grey;
+                    font-size: 12px;
+                }
+            }
+
+            button {
+                font-size: 14px;
+                width: 130px;
+                border: 1px solid #c3c0c0;
+                border-radius: 5px;
+                padding: 7px 18px;
+                background-color: white;
+                color: #126db7;
+                align-self: baseline;
+            }
+        }
+    }
+
+
+    .pagination {
+        display: flex;
+        justify-content: center;
+        margin: 35px 0;
+
+        .my-pagination ::ng-deep {
+
+            .ngx-pagination {
+                margin: 0;
+                padding: 0;
+
+                .current {
+                    background: #126db7;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+
+
+    .end {
+        background-color: rgb(246 246 242);
+
+        hr {
+            border-color: grey;
+            margin: 30px 0 40px 0;
+        }
+
+        .end-1-div {
+            display: flex;
+            justify-content: space-evenly;
+
+            ul {
+                padding: 0;
+
+                h5 {
+                    font-weight: 400;
+                }
+
+                li {
+                    list-style: none;
+                    color: #126db7;
+                    padding: 5px 0;
+                    font-size: 15px;
+                    cursor: pointer;
+                }
+
+                button {
+                    background-color: #126db7;
+                    color: white;
+                    border: none;
+                    padding: 6px 10px;
+                    border-radius: 5px;
+                }
+            }
+        }
+
+        .end-2-div {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 70px;
+            border-top: 1px solid #e6e6e6;
+
+
+            span {
+                color: #126db7;
+                font-size: 13px;
+                cursor: pointer;
+            }
+
+            div {
+                i {
+                    background-color: #126db7;
+                    color: white;
+                    padding: 7px;
+                    margin: 0 5px;
+                    width: 30px;
+                    text-align: center;
+                    cursor: pointer;
+                }
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width: 550px) {
+
+    .main {
+        h1 {
+            font-size: 24px;
+        }
+
+        .profiles {
+
+            .one-profile {
+                display: block;
+    
+                .description {
+                    float: right;    
+                }
+    
+                button {
+                    width: 100%;
+                    margin-top: 30px;
+                }
+            }
+
+        }
+
+
+        .end {
+
+            .end-1-div {
+                display: block;
+            }
+
+            .end-2-div {
+                align-items: normal;
+                padding: 20px 0;
+
+
+                span {
+                    align-self: flex-end;
+                }
+
+            }
+        }
+    }
+}
+
