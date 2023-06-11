@@ -22,17 +22,17 @@ export class ServiceService {
       }
     }
 
-    return this.http.get("https://private-anon-d51fe96eda-toptalui.apiary-mock.com/developers", options);
+    return this.http.get("https://private-anon-6db71068d5-toptalui.apiary-mock.com/developers", options);
 
   }
 
 
   getSkills():Observable<any>{
-    return this.http.get("https://private-anon-d51fe96eda-toptalui.apiary-mock.com/categories/skills");
+    return this.http.get("https://private-anon-6db71068d5-toptalui.apiary-mock.com/categories/skills");
   }
 
   getSpecialisations():Observable<any>{
-    return this.http.get("https://private-anon-d51fe96eda-toptalui.apiary-mock.com/categories/specialisations");
+    return this.http.get("http://private-anon-6db71068d5-toptalui.apiary-mock.com/categories/specialisations");
   }
 
 
