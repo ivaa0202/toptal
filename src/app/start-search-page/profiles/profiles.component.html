@@ -2,7 +2,7 @@
     <h1>Top full-stack developers in United States</h1>
     <div class="profiles">
         <div class="one-profile" *ngFor="let i of developers | paginate: { itemsPerPage: 5, currentPage: p }">
-            <img src="../assets/img/profile-img.webp">
+            <img src="assets/img/profile-img.webp">
             <div class="description">
                 <p>{{i.first_name}} {{i.last_name}}  ;  <span>{{i.category}}</span></p>
                 <span *ngFor="let skill of i.skills">{{skill.title}}</span>
